@@ -1,4 +1,4 @@
-16.15.1# This file is the main docker file configurations
+# This file is the main docker file configurations
 
 # Official Node JS runtime as a parent image
 FROM node:16.15.1
