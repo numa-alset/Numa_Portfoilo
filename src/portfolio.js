@@ -16,10 +16,10 @@ const greeting = {
   username: "Numa alset",
   title: "Hi all, I'm Numa",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / .NET / Flutter / Kotln and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀  with a proven track record of building robust and scalable web and mobile applications. Proficient in a diverse tech stack including .NET, React, Flutter, and Django and so many others.Proficient in crafting efficient and maintainable backend systems, Possessing a keen eye for design, implementing exceptional user experiences through responsive and intuitive UIs. Committed to delivering high-quality software by adhering to industry best practices and standards. I am dedicated problem-solver, I thrive in challenging environments and consistently exceed expectations."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/15c-huEFrquCUAXeCTPM9LegoHYk-c8Ci/view?usp=drivesdk", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -37,16 +37,16 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end and User Interfaces for your web "
+      "⚡ Develop highly interactive responsive and adaptive Front end and User Interfaces for your web or mobile "
     ),
     emoji("⚡ Develop highly responsive and adaptive Interfaces for your mobile Application "),
     emoji(
-      "⚡ building a secure backend and delivering high preformance api "
+      "⚡ Expert in crafting secure, scalable backend architectures and delivering high-performance APIs to support complex applications."
     ), emoji(
-      "⚡ Integration of third party services "
+      "⚡ Delivering innovative solutions through problem-solving and strategic third-party integrations"
     )
     , emoji(
-      "⚡ Dealing efficiently with Database / Analyzing Data and generating a high preformance queries "
+      "⚡ Optimizing database performance, conducting in-depth data analysis, and crafting high-performance queries."
     )
   ],
 
@@ -142,13 +142,13 @@ const workExperiences = {
       company: "Rental Reale Estate App",
       companylogo: require("./assets/images/Logo_PNG_1024.png"),
       date: "Jan 2024 ",
-      desc: [" mobile application  helps you to find rental places based on filters and contacting directly with the owner  ",<p >I Learnt from this project</p>,],
+      desc: ["Asp.net core web Api for Rental App with chat functionalty and VIP user tier for accessing a specific Features  ",<p >I Learnt from this project</p>,],
       descBullets: [
-        "Building a responsive and adaptive mobile interfaces ",
-        "Authunticate users and Token with any backend",
-        "Building a chat Functionality with webSocket",
-        "Mastering Provider StateManagmet and implementing it via widget tree",
-        "Dealing with Firebase and achive its Featuers"
+        "Building a complete and secure Api ",
+        "Authunticate and Authorization with [Admin-Vip-default] teirs ",
+        "Building a chat Functionality with SingleR over webSocket",
+        "using EntityFramework with code first migration",
+        "Clean Arcitecture with Repository pattern and UnitOfWork"
       ]
     },
     {
@@ -196,37 +196,37 @@ const bigProjects = {
   subtitle: "PROJECTS THAT I HELPED TO CREATE AND DELEVER",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/Logo_PNG_1024.png"),
       projectName: "RENTAL REAL ESTATE",
-      projectDesc: "SMART ASSISTANSE THAT HELPS YOU FIND OR PUBLISH REANTAL PROPRTY ",
+      projectDesc: "the Backend section for Homey app",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "See on github",
+          url: "https://github.com/numa-alset/Homey_Backend"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/Logo_PNG_1024.png"),
+      projectName: "RENTAL REAL ESTATE",
+      projectDesc: "The Frontend section for Homey app ",
+      footerLink: [
+        {
+          name: "See on github",
+          url: "https://github.com/numa-alset/homey"
         }
         //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "RENTAL REAL ESTATE",
-      projectDesc: "SMART ASSISTANSE THAT HELPS YOU FIND OR PUBLISH REANTAL PROPRTY ",
+      projectName: "REVIEWS WEBSITE",
+      projectDesc: "To see what is most populer Tv-Series and Movies now with capabilites of adding reviews ",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "RENTAL REAL ESTATE",
-      projectDesc: "SMART ASSISTANSE THAT HELPS YOU FIND OR PUBLISH REANTAL PROPRTY ",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "see on github",
+          url: "https://github.com/numa-alset"
         }
         //  you can add extra buttons here.
       ]
@@ -255,6 +255,27 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
+    {
+      title: "NextJs Course",
+      subtitle:
+        "Finished Maximilian course , coding all his projects and understands all topics",
+      image: require("./assets/images/next.jpg"),
+      imageAlt: "Flutter Dev",
+      footerLink: [
+        // {
+        //   name: "Projects",
+        //   url: "https://drive.google.com/drive/folders/133fkRxQrt65ln_9DIlWXkvjXWO2JJ0Vm"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: ""
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
+      ]
+    },
     {
       title: "Flutter Developer",
       subtitle:
@@ -296,7 +317,7 @@ const achievementSection = {
 
     {
       title: "ICPC CONTESTANT",
-      subtitle: "I participate in the ICPC win in the local level but didn't reach to international yet",
+      subtitle: "I participate in the ICPC as contestant twice and once as volunteer",
       image: require("./assets/images/ICPC.png"),
       imageAlt: "PWA Logo",
       footerLink: [
