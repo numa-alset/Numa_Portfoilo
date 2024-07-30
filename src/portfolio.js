@@ -220,26 +220,45 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "REVIEWS WEBSITE",
-      projectDesc: "To see what is most populer Tv-Series and Movies now with capabilites of adding reviews ",
+      image: require("./assets/images/shop_app.png"),
+      projectName: "SHOP APP",
+      projectDesc: "A simple Electronic shop with cart feature and Firebase integrations ",
       footerLink: [
         {
           name: "see on github",
-          url: "https://github.com/numa-alset"
+          url: "https://github.com/numa-alset/shop_app"
+        },
+        {
+          name: "see Demo and install the app",
+          url: "https://drive.google.com/drive/folders/163eeWbIjg4R_CtXUeNFtuUOpQOFxyfea"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "PUBLIC SERVICES",
-      projectDesc: "FIND FACILITIES LIKE PHARMACIES BASED ON NEAREST OR RATED AND DISPLAYED ON MAP",
+      image: require("./assets/images/meal-app1.png"),
+      projectName: "Reccipe Meals App",
+      projectDesc: "Simple app for show Recipe for some Meals and Filter them ",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "see on github",
+          url: "https://github.com/numa-alset/meals-app"
+        },
+        {
+          name: "see Demo and install the app",
+          url: "https://drive.google.com/drive/folders/16D2Fj4NVS1aDEOtAkNKhTWgdz7pKwS7C"
         }
+      ]
+    },
+    {
+      image: require("./assets/images/APP2 (2).png"),
+      projectName: "Public Service",
+      projectDesc: "Roaming website with Map integration to see the path for nearest Health facility or based on filters",
+      footerLink: [
+        {
+          name: "see on github",
+          url: "https://github.com/numa-alset/public_services"
+        },
       ]
     }
   ],
