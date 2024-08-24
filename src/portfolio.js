@@ -215,7 +215,7 @@ const bigProjects = {
         {
           name: "See on github",
           url: "https://github.com/numa-alset/homey"
-        }
+        },
         {
           name: "see Demo about the app",
           url: "https://drive.google.com/drive/folders/13y_tSIEy404VY4wVkIXvsy8QL5uS1Ft4"
