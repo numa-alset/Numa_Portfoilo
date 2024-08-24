@@ -19,7 +19,7 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀  with a proven track record of building robust and scalable web and mobile applications. Proficient in a diverse tech stack including .NET, React, Flutter, and Django and so many others.Proficient in crafting efficient and maintainable backend systems, Possessing a keen eye for design, implementing exceptional user experiences through responsive and intuitive UIs. Committed to delivering high-quality software by adhering to industry best practices and standards. I am dedicated problem-solver, I thrive in challenging environments and consistently exceed expectations."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/15c-huEFrquCUAXeCTPM9LegoHYk-c8Ci/view?usp=drivesdk", // Set to empty to hide the button
+    "https://drive.google.com/file/d/17BeEmeRd398ESeTK6pDjQ_O1DrwihIyf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
