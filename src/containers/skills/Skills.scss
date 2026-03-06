@@ -27,6 +27,76 @@
 .subTitle {
   color: $subTitle;
 }
+/* Add this to your existing Skills.scss */
+
+.display-skills-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.skill-category-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333; /* Default text color */
+}
+
+/* Adjust title color for dark mode if needed */
+.dark-mode.skill-category-title {
+  color: #fff; 
+}
+
+.skill-tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: #f3f4f6; /* Light gray background */
+  color: #374151; /* Dark gray text */
+  padding: 8px 16px;
+  border-radius: 20px; /* Makes them pill-shaped */
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  background-color: #e5e7eb;
+}
+
+/* Dark mode styling for tags */
+.dark-mode.skill-tag {
+  background-color: #1f2937; /* Dark background */
+  color: #e5e7eb; /* Light text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode.skill-tag:hover {
+  background-color: #374151;
+}
+/* Make sure it scales down nicely on mobile */
+@media (max-width: 768px) {
+  .display-skills-container {
+    margin-top: 20px;
+    align-items: center; /* Center them on mobile */
+  }
+  
+  .skill-category-title {
+    text-align: center;
+  }
+
+  .skill-tags-wrapper {
+    justify-content: center;
+  }
+}
 
 /* Media Query */
 @media (max-width: 1380px) {
