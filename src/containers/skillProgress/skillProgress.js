@@ -1,45 +1,33 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Progress.scss";
-import {illustration, techStack} from "../../portfolio";
-import {Fade} from "react-reveal";
-import Build from "../../assets/lottie/build";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import { Fade } from "react-reveal";
+import { techStack } from "../../portfolio";
+import StyleContext from "../../contexts/StyleContext";
 
-export default function StackProgress() {
-  if (techStack.viewSkillBars) {
-    return (
-      <Fade bottom duration={1000} distance="20px">
-        <div className="skills-container">
-          <div className="skills-bar">
-            <h1 className="skills-heading">Proficiency</h1>
-            {techStack.experience.map((exp, i) => {
-              const progressStyle = {
-                width: exp.progressPercentage
-              };
-              return (
-                <div key={i} className="skill">
-                  <p>{exp.Stack}</p>
-                  <div className="meter">
-                    <span style={progressStyle}></span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+export default function TechnicalService() {
+  const { isDark } = useContext(StyleContext);
 
-          <div className="skills-image">
-            {illustration.animated ? (
-              <DisplayLottie animationData={Build} />
-            ) : (
-              <img
-                alt="Skills"
-                src={require("../../assets/images/skill.svg")}
-              />
-            )}
-          </div>
+  return (
+    <Fade bottom duration={1000} distance="20px">
+      <div className="service-main-div" id="how-i-work">
+        <h1 className={isDark ? "dark-mode heading" : "heading"}>
+          Expertise & Workflow
+        </h1>
+        <div className="service-cards-container">
+          {techStack.services.map((service, i) => (
+            <div key={i} className={isDark ? "dark-mode service-card" : "service-card"}>
+              <div className="service-icon">{service.icon}</div>
+              <h3 className="service-title">{service.title}</h3>
+              <p className="service-description">{service.description}</p>
+              <div className="service-tech-tags">
+                {service.tags.map((tag, j) => (
+                  <span key={j} className="mini-tag">{tag}</span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
-      </Fade>
-    );
-  }
-  return null;
+      </div>
+    </Fade>
+  );
 }
