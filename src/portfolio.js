@@ -14,10 +14,14 @@ const illustration = {
 };
 const greeting = {
   username: "Numa alset",
-  title: "Hi all, I'm Numa",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀  with a proven track record of building robust and scalable web and mobile applications. Proficient in a diverse tech stack including .NET, React, Flutter, and Django and so many others.Proficient in crafting efficient and maintainable backend systems, Possessing a keen eye for design, implementing exceptional user experiences through responsive and intuitive UIs. Committed to delivering high-quality software by adhering to industry best practices and standards. I am dedicated problem-solver, I thrive in challenging environments and consistently exceed expectations."
-  ),
+  title: "Hi, I'm Numa",
+ subTitle: emoji(
+  `I'm a Full-Stack Software Developer and Expert Generalist who builds modern web and mobile applications.
+
+I develop robust backend systems with .NET, craft high-performance mobile apps with Flutter, and build dynamic frontends using React and Next.js.
+
+I enjoy turning complex ideas into clean, efficient, and user-friendly digital products.`
+),
   resumeLink:
     "https://drive.google.com/file/d/188ycy0g8FF_3JZeGCeVGpc8VM6XAFDvy", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -32,65 +36,136 @@ const socialMediaLinks = {
 };
 
 // Skills Section
+
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle: "Full-Stack Developer building modern web, mobile, and backend systems",
+
   skills: [
     emoji(
-      "⚡ Develop highly interactive responsive and adaptive Front end and User Interfaces for your web or mobile "
+      "⚡ Build modern, responsive web applications using React, Next.js, and TypeScript with focus on performance, SEO, and great user experience."
     ),
-    emoji("⚡ Develop highly responsive and adaptive Interfaces for your mobile Application "),
+
     emoji(
-      "⚡ Expert in crafting secure, scalable backend architectures and delivering high-performance APIs to support complex applications."
-    ), emoji(
-      "⚡ Delivering innovative solutions through problem-solving and strategic third-party integrations"
-    )
-    , emoji(
-      "⚡ Optimizing database performance, conducting in-depth data analysis, and crafting high-performance queries."
+      "⚡ Develop high-performance cross-platform mobile apps with Flutter and Dart, implementing clean architecture, scalable state management (Bloc, Riverpod), and pixel-perfect UI."
+    ),
+
+    emoji(
+      "⚡ Design and build secure backend systems using .NET, creating RESTful APIs, real-time services (SignalR, WebSockets), and scalable application architectures."
+    ),
+
+    emoji(
+      "⚡ Integrate third-party services and APIs including Firebase, authentication systems, notifications, analytics, and real-time communication."
+    ),
+
+    emoji(
+      "⚡ Design and optimize databases using PostgreSQL, MongoDB, Redis, and SQL with focus on performance and reliability."
+    ),
+
+    emoji(
+      "⚡ Follow modern development practices including Clean Architecture, modular design, API security (JWT/OAuth), and Agile workflows."
     )
   ],
 
-
-  softwareSkills: [
+softwareSkills: [
+  {
+    skillName: "html-5",
+    fontAwesomeClassname: "fab fa-html5"
+  },
+  {
+    skillName: "css3",
+    fontAwesomeClassname: "fab fa-css3-alt"
+  },
+  {
+    skillName: "JavaScript",
+    fontAwesomeClassname: "fab fa-js"
+  },
+  {
+    skillName: "TypeScript",
+    fontAwesomeClassname: "fab fa-js"
+  },
+  {
+    skillName: "React",
+    fontAwesomeClassname: "fab fa-react"
+  },
+  {
+    skillName: "Node.js",
+    fontAwesomeClassname: "fab fa-node"
+  },
+  {
+    skillName: "NPM",
+    fontAwesomeClassname: "fab fa-npm"
+  },
+  {
+    skillName: "Flutter",
+    fontAwesomeClassname: "fas fa-mobile-alt"
+  },
+  {
+    skillName: "Dart",
+    fontAwesomeClassname: "fas fa-code"
+  },
+  {
+    skillName: ".NET",
+    fontAwesomeClassname: "fas fa-server"
+  },
+  {
+    skillName: "REST API",
+    fontAwesomeClassname: "fas fa-exchange-alt"
+  },
+  {
+    skillName: "WebSockets",
+    fontAwesomeClassname: "fas fa-plug"
+  },
+  {
+    skillName: "SignalR",
+    fontAwesomeClassname: "fas fa-bolt"
+  },
+  {
+    skillName: "SQL Database",
+    fontAwesomeClassname: "fas fa-database"
+  },
+  {
+    skillName: "PostgreSQL",
+    fontAwesomeClassname: "fas fa-database"
+  },
+  {
+    skillName: "MongoDB",
+    fontAwesomeClassname: "fas fa-leaf"
+  },
+  {
+    skillName: "Redis",
+    fontAwesomeClassname: "fas fa-memory"
+  },
+  {
+    skillName: "Firebase",
+    fontAwesomeClassname: "fas fa-fire"
+  },
+  {
+    skillName: "Git",
+    fontAwesomeClassname: "fab fa-git-alt"
+  },
+  {
+    skillName: "Python",
+    fontAwesomeClassname: "fab fa-python"
+  }
+],
+  displaySkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      category: "Mobile & Flutter",
+      items: ["Riverpod/Bloc", "Custom Platform Channels (Kotlin/Swift)", "SDU Implementation", "Codemagic/TestFlight"]
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      category: "Frontend & Web",
+      items: ["Next.js (SSR/CSR/ISR)", "TypeScript", "Tailwind CSS", "SEO"]
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      category: "Backend & Cloud",
+      items: [".NET Core", "SignalR", "PostgreSQL/MongoDB","Daper", "Firebase (FCM/Analytics)"]
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    // {
-    //   skillName: "Kotln",
-    //   fontAwesomeClassname: "fab fa-kotlin"
-    // },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-
+      category: "Architecture & Security",
+      items: ["Clean Architecture", "OAuth/JWT/Cookies", "Agile/Scrum", "Data Encryption"]
+    }
   ],
   display: true 
 };
@@ -100,11 +175,11 @@ const educationInfo = {
   display: true, 
   schools: [
     {
-      schoolName: "Al-Baath University",
-      logo: require("./assets/images/IMG-20211124-WA0000.jpg"),
+      schoolName: "Homs University",
+      logo: require("./assets/images/homsUniversity.png"),
       subHeader: "bachelor of Software engineering ",
       duration: "September 2019 - August 2024",
-      desc: "Participated in ICPC 3 times ",
+      desc: "Degree recognized in Germany (Anabin H+) and equivalent to a German Bachelor's degree.",
       descBullets:''
     },
    
@@ -113,23 +188,46 @@ const educationInfo = {
 
 // Your top 3 proficient stacks/tech experience
 
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
+// const techStack = {
+//   viewSkillBars: true, //Set it to true to show Proficiency Section
+//   experience: [
+//     {
+//       Stack: "Frontend", //Insert stack or technology you have experience in
+//       progressPercentage: "98%" //Insert relative proficiency in percentage
+//     },
+//     {
+//       Stack: "Backend",
+//       progressPercentage: "98%"
+//     },
+//     {
+//       Stack: "Programming",
+//       progressPercentage: "100%"
+//     }
+//   ],
+//   displayCodersrank: false 
+// };
+ const techStack = {
+  viewSkillBars: true, // You can keep this toggle
+  services: [
     {
-      Stack: "Frontend", //Insert stack or technology you have experience in
-      progressPercentage: "98%" //Insert relative proficiency in percentage
+      title: "Mobile-First Development",
+      icon: "📱",
+      description: "Building high-performance, cross-platform apps with Flutter. Expert in SDU (Server Driven UI) and seamless native integrations.",
+      tags: ["Flutter", "Firebase", "dynamic widgets", "Bloc","Custom Method Channels"]
     },
     {
-      Stack: "Backend",
-      progressPercentage: "98%"
+      title: "Scalable Backend Systems",
+      icon: "⚙️",
+      description: "Architecting robust enterprise solutions using .NET. Focused on Clean Architecture, high-concurrency APIs, and real-time data.",
+      tags: [".NET 8", "SignalR", "PostgreSQL", "Redis"]
     },
     {
-      Stack: "Programming",
-      progressPercentage: "100%"
+      title: "Modern Web Ecosystems",
+      icon: "🌐",
+      description: "Crafting SEO-optimized, ultra-fast web interfaces using Next.js and React. Bridging the gap between design and complex logic.",
+      tags: ["Next.js", "TypeScript", "React", "Hydration State management","SSR/ISR"]
     }
-  ],
-  displayCodersrank: false 
+  ]
 };
 
 // Work experience section
