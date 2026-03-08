@@ -6,12 +6,9 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
-    if (!url) {
-      return;
-    }
-    const win = window.open(url, "_blank", "noopener,noreferrer");
-    win.focus();
-  }
+  if (!url) return;
+  window.open(url, "_blank", "noopener,noreferrer");
+}
 
   const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
