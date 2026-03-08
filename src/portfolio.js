@@ -544,36 +544,15 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "NextJs Course",
+      title: "Mathimatics Olympiad",
       subtitle:
-        "Finished Maximilian course , coding all his projects and understands all topics",
-      image: require("./assets/images/next.jpg"),
-      imageAlt: "Flutter Dev",
-      footerLink: [
-        // {
-        //   name: "Projects",
-        //   url: "https://drive.google.com/drive/folders/133fkRxQrt65ln_9DIlWXkvjXWO2JJ0Vm"
-        // },
-        // {
-        //   name: "Award Letter",
-        //   url: ""
-        // },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        // }
-      ]
-    },
-    {
-      title: "Flutter Developer",
-      subtitle:
-        "Finished Maximilian course , coding all his projects and understands all topics",
-      image: require("./assets/images/flutter.png"),
-      imageAlt: "Flutter Dev",
+        "Participate in the third university olympiad for mathimatics and earned the 5th place",
+      image: require("./assets/images/homsUniversity.png"),
+      imageAlt: "University Logo",
       footerLink: [
         {
-          name: "Projects",
-          url: "https://drive.google.com/drive/folders/133fkRxQrt65ln_9DIlWXkvjXWO2JJ0Vm"
+          name: "2021",
+          // url: "https://drive.google.com/drive/folders/133fkRxQrt65ln_9DIlWXkvjXWO2JJ0Vm"
         },
         // {
         //   name: "Award Letter",
@@ -585,6 +564,19 @@ const achievementSection = {
         // }
       ]
     },
+    // {
+    //   title: "Flutter Developer",
+    //   subtitle:
+    //     "Finished Maximilian course , coding all his projects and understands all topics",
+    //   image: require("./assets/images/flutter.png"),
+    //   imageAlt: "Flutter Dev",
+    //   footerLink: [
+    //     {
+    //       name: "Projects",
+    //       url: "https://drive.google.com/drive/folders/133fkRxQrt65ln_9DIlWXkvjXWO2JJ0Vm"
+    //     },
+    //   ]
+    // },
     {
       title: "FULL STACK IBM CERTIFICATE",
       subtitle:
@@ -604,10 +596,20 @@ const achievementSection = {
     },
 
     {
-      title: "ICPC CONTESTANT",
-      subtitle: "I participate in the ICPC as contestant twice and once as volunteer",
+      title: "SCPC CONTESTANT",
+      subtitle: "I participate in the SCPC as contestant twice ",
       image: require("./assets/images/ICPC.png"),
-      imageAlt: "PWA Logo",
+      imageAlt: "scpc Logo",
+      footerLink: [
+        {name: "Certification", url: "https://drive.google.com/drive/folders/13mKm9e4OHj-d4gtLsQtP2uzrG3Hklhbf"},
+      ]
+    },
+    
+    {
+      title: "SCPC Volunteer",
+      subtitle: "I Volunteer in the SCPC as Technical team member ",
+      image: require("./assets/images/ICPC.png"),
+      imageAlt: "scpc Logo",
       footerLink: [
         {name: "Certification", url: "https://drive.google.com/drive/folders/13mKm9e4OHj-d4gtLsQtP2uzrG3Hklhbf"},
       ]
