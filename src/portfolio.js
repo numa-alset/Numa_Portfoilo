@@ -232,53 +232,196 @@ const educationInfo = {
 
 // Work experience section
 
+// const workExperiences = {
+//   display: true, 
+//   experience: [
+//     {
+//       role: "Backend Developer",
+//       company: "Rental Reale Estate App",
+//       companylogo: require("./assets/images/Logo_PNG_1024.png"),
+//       date: "Jan 2024 ",
+//       desc: ["Asp.net core web Api for Rental App with chat functionalty and VIP user tier for accessing a specific Features  ",<p >I Learnt from this project</p>,],
+//       descBullets: [
+//         "Building a complete and secure Api ",
+//         "Authunticate and Authorization with [Admin-Vip-default] teirs ",
+//         "Building a chat Functionality with SingleR over webSocket",
+//         "using EntityFramework with code first migration",
+//         "Clean Arcitecture with Repository pattern and UnitOfWork"
+//       ]
+//     },
+//     {
+//       role: "Flutter Developer",
+//       company: "Rental Reale Estate App",
+//       companylogo: require("./assets/images/Logo_PNG_1024.png"),
+//       date: "Jan 2024 ",
+//       desc: ["mobile application  helps you to find rental places based on filters and contacting directly with the owner  ",<p >I Learnt from this project</p>,],
+//       descBullets: [
+//         "Building a responsive and adaptive mobile interfaces ",
+//         "Authunticate users and Token with any backend",
+//         "Building a chat Functionality with webSocket",
+//         "Mastering Provider StateManagmet and implementing it via widget tree",
+//         "Dealing with Firebase and achive its Featuers"
+//       ]
+//     },
+//     {
+//       role: "Front-End Developer",
+//       company: "public service website",
+//       companylogo: require("./assets/images/APP2 (2).png"),
+//       date: "May 2023",
+//       desc:[ "website that allows you to add your facility on map and let users reach you by reviews or short distance",<p>I Learnt from this project</p>],
+//       descBullets: [
+
+//         "Building a responsive and interactive web interfaces",
+//         "Comunicating with backend via APIs",
+//         "integrating React with third party",
+//         "Mastering mapbox services and implementing it in the app",
+//         "Dealing with React hooks and use it in the app"
+//       ]
+//     },
+   
+//   ]
+// };
+// const workExperiences = {
+//   display: true,
+//   experience: [
+//     {
+//       role: "Full-Stack Engineer",
+//       company: "Mazadi.app",
+//       companylogo: require("./assets/images/mazadi.png"),
+//       date: "Sep 2024 – Present",
+//       desc: "Working across Flutter, Next.js, React, and ASP.NET Core to build and scale real-world production systems.",
+//       descBullets: [
+//         "Upgraded the Mazadi mobile application to Flutter 3 and resolved breaking changes.",
+//         "Implemented real-time video and audio streaming using WebRTC in Flutter.",
+//         "Built a server-driven UI system allowing backend-controlled interface rendering.",
+//         "Developed backend services using ASP.NET Core including authentication and REST APIs.",
+//         "Built a Next.js web platform with improved SEO and optimized server-side rendering.",
+//         "Developed a React + TypeScript dashboard integrating AI chat assistance.",
+//         "Integrated blockchain smart contract interactions and wallet authentication flows.",
+//         "Maintained clean modular architecture and optimized application performance."
+//       ]
+//     },
+
+//     {
+//       role: "Frontend Developer",
+//       company: "web.mazadi.app",
+//       companylogo: require("./assets/images/mazadi.png"),
+//       date: "Oct 2025 – Mar 2026",
+//       desc: "Responsible for building and optimizing the Mazadi web platform using modern frontend technologies.",
+//       descBullets: [
+//         "Re-architected the frontend using Next.js App Router improving performance and structure.",
+//         "Reduced initial page load time by optimizing SSR boundaries.",
+//         "Improved SEO using Next.js Metadata API, Open Graph, and sitemap strategies.",
+//         "Implemented optimized SSR / CSR hydration strategies.",
+//         "Improved CLS, LCP, and overall Lighthouse performance scores."
+//       ]
+//     },
+
+//     {
+//       role: "React Developer",
+//       company: "Ethiq.us",
+//       companylogo: require("./assets/images/ethiq.png"),
+//       date: "Sep 2025 – Dec 2025",
+//       desc: "Worked on an AI-powered chatbot platform integrated with Web3 blockchain infrastructure.",
+//       descBullets: [
+//         "Integrated an AI agent into a React chatbot interface for intelligent responses.",
+//         "Built frontend logic interacting with smart contracts and decentralized services.",
+//         "Designed conversational UI components for real-time AI interactions.",
+//         "Handled asynchronous state management for AI responses and blockchain events."
+//       ]
+//     },
+
+//     {
+//       role: "Flutter Developer",
+//       company: "ASBN (Australian Syrian Business Network)",
+//       companylogo: require("./assets/images/asbn.png"),
+//       date: "Jun 2025 – Aug 2025",
+//       desc: "Led development of the ASBN mobile application from wireframes to production deployment.",
+//       descBullets: [
+//         "Translated UI wireframes and requirements into a full Flutter application.",
+//         "Implemented dynamic CMS-driven pages and WebView modules.",
+//         "Designed scalable Clean Architecture using BLoC and feature-based structure.",
+//         "Delivered a production-ready cross-platform application for iOS and Android."
+//       ]
+//     }
+//   ]
+// };
 const workExperiences = {
-  display: true, 
+  display: true,
   experience: [
+{
+  role: "Senior Flutter Developer",
+  company: "Mazadi.app",
+  url:"https://mazadi.app/",
+  companylogo: require("./assets/images/mazadi3.png"), // update path if needed
+  date: "Oct 2024 – Aug 2025",
+  desc: "Responsible for maintaining, modernizing, and scaling the Mazadi mobile application while improving performance and stability.",
+  descBullets: [
+    "Refactored and migrated the application to Flutter 3, resolving breaking changes and improving overall stability.",
+    "Optimized rendering performance for large dynamic data lists by redesigning data-fetching logic with caching to reduce unnecessary rebuilds.",
+    "Implemented image caching and lazy loading strategies, significantly improving media loading performance.",
+    "Developed dynamic multi-language support (Arabic / English) with proper RTL handling and localization architecture.",
+    "Integrated secure payment gateways including Bank Al Baraka for smooth transaction processing.",
+    "Built a custom native Android module using Kotlin for SMS-based OTP verification and auto-read authentication flow."
+  ]
+},
     {
-      role: "Backend Developer",
-      company: "Rental Reale Estate App",
-      companylogo: require("./assets/images/Logo_PNG_1024.png"),
-      date: "Jan 2024 ",
-      desc: ["Asp.net core web Api for Rental App with chat functionalty and VIP user tier for accessing a specific Features  ",<p >I Learnt from this project</p>,],
+      role: "Frontend Developer (Next.js)",
+      company: "web.mazadi.app",
+      url: "https://web.mazadi.app/",
+      companylogo: require("./assets/images/mazadi3.png"),
+      date: "Oct 2025 – Mar 2026",
+      desc: "Re-engineered the web presence to prioritize performance, SEO, and seamless user hydration.",
       descBullets: [
-        "Building a complete and secure Api ",
-        "Authunticate and Authorization with [Admin-Vip-default] teirs ",
-        "Building a chat Functionality with SingleR over webSocket",
-        "using EntityFramework with code first migration",
-        "Clean Arcitecture with Repository pattern and UnitOfWork"
+        "Re-architected the frontend using Next.js App Router, cutting initial page load time in half via optimized SSR boundaries.",
+        "Mastered SEO optimization using Metadata API, dynamic meta tags, Open Graph, and automated sitemap strategies.",
+        "Implemented SSR/CSR hydration strategies to resolve performance bottlenecks and improve user experience.",
+        "Significantly improved Core Web Vitals (CLS, LCP) and achieved high Lighthouse scores across all modules."
+      ]
+    },
+    {
+      role: "React Developer (AI & Web3)",
+      company: "Ethiq.us",
+      url:"https://app.ethiq.us/",
+      companylogo: require("./assets/images/ethiq2.png"),
+      date: "Sep 2025 – Dec 2025",
+      desc: "Bridging the gap between AI-driven communication and decentralized blockchain infrastructure.",
+      descBullets: [
+        "Integrated AI-powered agents into a React chatbot interface for intelligent, context-aware user interactions.",
+        "Built secure frontend logic for interacting with smart contracts and Web3 decentralized services.",
+        "Designed conversational UI components and managed complex asynchronous state for blockchain events.",
+        "Developed wallet-based authentication flows and on-chain operation tracking."
       ]
     },
     {
       role: "Flutter Developer",
-      company: "Rental Reale Estate App",
-      companylogo: require("./assets/images/Logo_PNG_1024.png"),
-      date: "Jan 2024 ",
-      desc: ["mobile application  helps you to find rental places based on filters and contacting directly with the owner  ",<p >I Learnt from this project</p>,],
+      company: "ASBN (Australian Syrian Business Network)",
+      url:"https://asbn.org.au/",
+      companylogo: require("./assets/images/asbn.png"),
+      date: "June 2025 – Aug 2025",
+      desc: "Led the end-to-end mobile development lifecycle from initial wireframes to App Store/Google Play deployment.",
       descBullets: [
-        "Building a responsive and adaptive mobile interfaces ",
-        "Authunticate users and Token with any backend",
-        "Building a chat Functionality with webSocket",
-        "Mastering Provider StateManagmet and implementing it via widget tree",
-        "Dealing with Firebase and achive its Featuers"
+        "Translated complex business requirements into a fully functional cross-platform application for iOS and Android.",
+        "Architected the app using Clean Architecture and BLoC pattern for maximum scalability.",
+        "Implemented dynamic content-driven pages and integrated WebView modules for CMS-powered content.",
+        "Managed successful production deployment and release cycles on both major app stores."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "public service website",
-      companylogo: require("./assets/images/APP2 (2).png"),
-      date: "May 2023",
-      desc:[ "website that allows you to add your facility on map and let users reach you by reviews or short distance",<p>I Learnt from this project</p>],
-      descBullets: [
-
-        "Building a responsive and interactive web interfaces",
-        "Comunicating with backend via APIs",
-        "integrating React with third party",
-        "Mastering mapbox services and implementing it in the app",
-        "Dealing with React hooks and use it in the app"
-      ]
-    },
-   
+  role: "Backend Developer (ASP.NET)",
+  company: "RK Tender",
+  url: "https://rk-tenders.com/",
+  companylogo: require("./assets/images/rktender.png"), // add logo if you have one
+  date: "Oct 2024 – Mar 2025",
+  desc: "Maintained and enhanced enterprise legacy systems used by Kabalan Group, focusing on backend performance, security, and maintainability.",
+  descBullets: [
+    "Maintained the enterprise systems built with C# and ASP.NET core, improving performance and maintainability.",
+    "Implemented custom Attribute-Based Access Control (ABAC) mechanisms to strengthen authorization and enforce fine-grained permissions.",
+    "Analyzed legacy system architecture to identify technical debt and proposed structural improvements.",
+    "Produced detailed technical documentation covering system architecture, workflows, and API behavior to support future development.",
+    "Collaborated with internal teams to troubleshoot production issues and optimize backend services."
+  ]
+}
   ]
 };
 
@@ -291,82 +434,106 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "PROJECTS THAT I HELPED TO CREATE AND DELEVER",
+  subtitle: "SELECTED PROJECTS I BUILT OR CONTRIBUTED TO",
   projects: [
     {
-      image: require("./assets/images/Logo_PNG_1024.png"),
-      projectName: "RENTAL REAL ESTATE",
-      projectDesc: "the Backend section for Homey app",
+  image: require("./assets/images/flutter.png"), // use Flutter logo or package image
+  projectName: "USSD Advanced Flutter",
+  projectDesc:
+    "A Flutter plugin that enables advanced USSD interactions on Android devices. It allows developers to send USSD requests, handle multi-step USSD sessions, and capture responses programmatically, enabling automation of telecom-based services.",
+  footerLink: [
+    {
+      name: "See on GitHub",
+      url: "https://github.com/numa-alset/ussd_advanced_flutter"
+    }
+  ]
+},
+    {
+      image: require("./assets/images/roomy.png"),
+      projectName: "Roomy – Voice Chat Rooms",
+      projectDesc:
+        "Real-time voice chat application built with Flutter using WebRTC and WebSockets. Includes AI voice assistant integration and follows Clean Architecture with Riverpod for scalable state management.",
+      techStack: ["Flutter", "WebRTC", "WebSockets", "Riverpod", "AI"],
       footerLink: [
         {
-          name: "See on github",
+          name: "See on GitHub",
+          url: "https://github.com/numa-alset/Roomy"
+        }
+      ]
+    },
+
+    {
+      image: require("./assets/images/Logo_PNG_1024.png"),
+      projectName: "Homey – Real Estate Backend",
+      projectDesc:
+        "ASP.NET Core Web API powering a real estate platform with user authentication, property listings, comments, and real-time chat functionality using SignalR.",
+      techStack: ["C#", "ASP.NET Core", "SQL Server", "SignalR", "JWT"],
+      footerLink: [
+        {
+          name: "See on GitHub",
           url: "https://github.com/numa-alset/Homey_Backend"
         }
-        //  you can add extra buttons here.
       ]
     },
+
     {
       image: require("./assets/images/Logo_PNG_1024.png"),
-      projectName: "RENTAL REAL ESTATE",
-      projectDesc: "The Frontend section for Homey app ",
+      projectName: "Homey – Real Estate Mobile App",
+      projectDesc:
+        "Flutter-based mobile application for discovering rental properties with advanced filtering, direct messaging with property owners, and an intuitive UI for seamless browsing.",
+      techStack: ["Flutter", "Firebase", "REST API"],
       footerLink: [
         {
-          name: "See on github",
+          name: "See on GitHub",
           url: "https://github.com/numa-alset/homey"
-        },
-        {
-          name: "see Demo about the app",
-          url: "https://drive.google.com/drive/folders/13y_tSIEy404VY4wVkIXvsy8QL5uS1Ft4"
         }
-        //  you can add extra buttons here.
       ]
     },
+
     {
       image: require("./assets/images/shop_app.png"),
-      projectName: "SHOP APP",
-      projectDesc: "A simple Electronic shop with cart feature and Firebase integrations ",
+      projectName: "E-Commerce Shop App",
+      projectDesc:
+        "Mobile e-commerce application built with Flutter featuring product browsing, cart management, and Firebase backend integration.",
+      techStack: ["Flutter", "Firebase"],
       footerLink: [
         {
-          name: "see on github",
+          name: "See on GitHub",
           url: "https://github.com/numa-alset/shop_app"
-        },
-        {
-          name: "see Demo and install the app",
-          url: "https://drive.google.com/drive/folders/163eeWbIjg4R_CtXUeNFtuUOpQOFxyfea"
         }
-        //  you can add extra buttons here.
       ]
     },
+
     {
       image: require("./assets/images/meal-app1.png"),
-      projectName: "Reccipe Meals App",
-      projectDesc: "Simple app for show Recipe for some Meals and Filter them ",
+      projectName: "Recipe Meals App",
+      projectDesc:
+        "Flutter application that allows users to explore recipes, filter meals by dietary preferences, and view detailed cooking instructions.",
+      techStack: ["Flutter"],
       footerLink: [
         {
-          name: "see on github",
+          name: "See on GitHub",
           url: "https://github.com/numa-alset/meals-app"
-        },
-        {
-          name: "see Demo and install the app",
-          url: "https://drive.google.com/drive/folders/16D2Fj4NVS1aDEOtAkNKhTWgdz7pKwS7C"
         }
       ]
     },
+
     {
       image: require("./assets/images/APP2 (2).png"),
-      projectName: "Public Service",
-      projectDesc: "Roaming website with Map integration to see the path for nearest Health facility or based on filters",
+      projectName: "Public Services Locator",
+      projectDesc:
+        "Web application with map integration that helps users locate nearby healthcare facilities and public services based on filters and geographic distance.",
+      techStack: ["JavaScript", "Maps API"],
       footerLink: [
         {
-          name: "see on github",
+          name: "See on GitHub",
           url: "https://github.com/numa-alset/public_services"
-        },
+        }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
-
 // Achievement Section
 // Include certificates, talks etc
 

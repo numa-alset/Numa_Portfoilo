@@ -1,7 +1,8 @@
 .experience-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem; /* Increased gap from 1rem to 2rem so the dense text doesn't feel cluttered */
+  align-items: stretch; /* Ensures all cards in a row are equal height */
 }
 
 .experience-heading {

@@ -9,7 +9,7 @@ export default function StartupProject() {
     if (!url) {
       return;
     }
-    var win = window.open(url, "_blank");
+    const win = window.open(url, "_blank", "noopener,noreferrer");
     win.focus();
   }
 
@@ -36,19 +36,20 @@ export default function StartupProject() {
             {bigProjects.projects.map((project, i) => {
               return (
                 <div
-                  key={i}
-                  className={
-                    isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
-                  }
-                >
+  className={
+    isDark
+      ? "dark-mode project-card project-card-dark"
+      : "project-card project-card-light"
+  }
+  onClick={() => project.footerLink?.[0] && openUrlInNewTab(project.footerLink[0].url)}
+>
                   {project.image ? (
                     <div className="project-image">
                       <img
                         src={project.image}
                         alt={project.projectName}
                         className="card-image"
+                        loading="lazy"
                       ></img>
                     </div>
                   ) : null}
@@ -65,6 +66,13 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                    {project.techStack && (
+  <div className="project-tech-stack">
+    {project.techStack.map((tech, i) => (
+      <span key={i} className="tech-badge">{tech}</span>
+    ))}
+  </div>
+)}
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
@@ -74,7 +82,10 @@ export default function StartupProject() {
                               className={
                                 isDark ? "dark-mode project-tag" : "project-tag"
                               }
-                              onClick={() => openUrlInNewTab(link.url)}
+                              onClick={(e) => {
+  e.stopPropagation();
+  openUrlInNewTab(link.url);
+}}
                             >
                               {link.name}
                             </span>

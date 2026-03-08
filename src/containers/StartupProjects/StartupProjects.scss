@@ -3,19 +3,31 @@
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 250px;
+  width: 220px;
+  object-fit: contain;
+  transition: transform .3s ease;
+}
+.project-card:hover .card-image {
+  transform: scale(1.05);
 }
 .card-title {
   color: $titleColor;
-  font-size: 22px;
+    font-size: 20px;
+  margin-top: 12px;
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
 }
 .card-subtitle {
   color: $cardSubtitle;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.5rem;
+  margin-top: 10px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .project-card {
   display: flex;
@@ -25,6 +37,12 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   justify-content: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
 }
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
@@ -61,9 +79,17 @@
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  gap: 2rem;
 }
-
+.tech-badge {
+  background: rgba(100, 100, 255, 0.1);
+  color: $titleColor;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin: 4px;
+  display: inline-block;
+}
 .project-card-footer span.project-tag {
   background: $buttonColor;
   color: $lightBackground3;
