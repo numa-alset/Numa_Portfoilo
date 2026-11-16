@@ -78,8 +78,15 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 2rem;
+}
+.projects-section {
+  box-sizing: border-box;
+}
+.project-card {
+  box-sizing: border-box;
+  min-width: 0;
 }
 .tech-badge {
   background: rgba(100, 100, 255, 0.1);
@@ -109,6 +116,18 @@
 }
 
 @media (max-width: 768px) {
+  .projects-section {
+    width: 100%;
+    padding: 20px 16px;
+  }
+  .projects-container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+  .project-card {
+    width: 100%;
+    padding: 1.25rem;
+  }
   .project-subtitle {
     font-size: 16px;
     text-align: center;
