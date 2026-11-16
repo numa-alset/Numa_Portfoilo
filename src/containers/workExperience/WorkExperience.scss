@@ -31,6 +31,10 @@
 }
 
 @media (max-width: 768px) {
+  .experience-cards-div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .experience-heading {
     font-size: 30px;
     text-align: center;
