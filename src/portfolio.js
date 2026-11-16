@@ -23,7 +23,7 @@ I develop robust backend systems with .NET, craft high-performance mobile apps w
 I enjoy turning complex ideas into clean, efficient, and user-friendly digital products.`
 ),
   resumeLink:
-    "https://drive.google.com/file/d/1D3j-m3_8_qhyoC4joF1ADmVi7s1cM7sx/view", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1b6zlasud8sDajFJPpaNPJ7q4ejGauCDp/view", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -621,7 +621,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+963-997412139",
+  number: "+49 177 5727930",
   email_address: "numaalset@gmail.com"
 };
 
