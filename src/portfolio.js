@@ -427,7 +427,7 @@ const workExperiences = {
 
 const openSource = {
   showGithubProfile: "true", 
-    display: true 
+    display: false 
 };
 
 // Some big projects you have worked on

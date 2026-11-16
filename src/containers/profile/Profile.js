@@ -2,44 +2,28 @@ import React, {useState, useEffect, lazy, Suspense} from "react";
 import {openSource} from "../../portfolio";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
+import {fetchGitHubUser} from "../../utils";
 
 const renderLoader = () => <Loading />;
 const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
 export default function Profile() {
-  const [prof, setrepo] = useState([]);
-  function setProfileFunction(array) {
-    setrepo(array);
-  }
+  const [prof, setProfile] = useState(null);
 
   useEffect(() => {
     if (openSource.showGithubProfile === "true") {
-      const getProfileData = () => {
-        fetch("/profile.json")
-          .then(result => {
-            if (result.ok) {
-              return result.json();
-            }
-          })
-          .then(response => {
-            setProfileFunction(response.data.user);
-          })
-          .catch(function (error) {
-            console.error(
-              `${error} (because of this error GitHub contact section could not be displayed. Contact section has reverted to default)`
-            );
-            setProfileFunction("Error");
-            openSource.showGithubProfile = "false";
-          });
-      };
-      getProfileData();
+      fetchGitHubUser(openSource.githubUsername)
+        .then(setProfile)
+        .catch(error => {
+          console.error(`Unable to load GitHub profile: ${error.message}`);
+        });
     }
   }, []);
   if (
     openSource.display &&
     openSource.showGithubProfile === "true" &&
-    !(typeof prof === "string" || prof instanceof String)
+    prof
   ) {
     return (
       <Suspense fallback={renderLoader()}>
