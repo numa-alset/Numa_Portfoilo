@@ -177,6 +177,15 @@
 }
 
 @media (max-width: 768px) {
+  .experience-card,
+  .experience-card-dark {
+    height: auto;
+  }
+
+  .experience-text-details {
+    flex-grow: 0;
+  }
+
   .experience-text-role {
     font-size: 22px;
   }
