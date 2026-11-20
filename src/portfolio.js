@@ -23,7 +23,7 @@ I develop robust backend systems with .NET, craft high-performance mobile apps w
 I enjoy turning complex ideas into clean, efficient, and user-friendly digital products.`
 ),
   resumeLink:
-    "https://drive.google.com/file/d/1b6zlasud8sDajFJPpaNPJ7q4ejGauCDp/view", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1JEdLpt3t24HymnUwlbXJHXiRPhc6Ijc3/view", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
